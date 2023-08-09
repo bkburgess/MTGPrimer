@@ -1,7 +1,10 @@
 body {
     max-width: 900px;
     min-width: 600;
-    margin:auto;
+    margin: auto;
+    background: rgb(95, 62, 14);
+    color: rgb(224, 224, 224);
+    font-family: "Merriweather", sans-serif;
 }
 
 p {
