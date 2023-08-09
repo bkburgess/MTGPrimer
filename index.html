@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            MTG Primer
+        </title>
+        <link href="./stylesheets/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>
+                Introduction to Magic: The Gathering
+            </h1>
+            <p>
+                Alright, you've decided that you're interested in learning Magic, but are unsure how to play and how to parse the cards that you see. Don't worry - this guide is here to get you started with that. It's by no means comprehensive, as anyone who plays will tell you that it can get complicated, and there's always more to learn about how it works. This will be a primer to get you playing some quick games, and then you'll be on your way to learning the rest as you go. Keep in mind, that for almost everything that I say here, there are cards and effects that make an exception. But it's best to learn the base behavior before getting into all the exceptions.
+            
+                I'll broadly break this primer into six main subjects:</p>
+            <ol>
+                <li>The Card Types and Card Structure</li>
+                <li>The Board</li>
+                <li>The Turn Structure</li>
+                <li>Jargon</li>
+                <li>The Colors</li>
+<!--                <li>Abilities and The Stack</li> -->
+            </ol>
+
+            <p>
+                Unfortunately for this guide, because of the nature of the game, there are plenty of important elements that require an understanding of multiple of these parts, so I don't think I'll be able to talk about them fully in isolation. Hopefully this order of subjects helps with that.<br>
+            </p>
+
+            <h2>Card Types and Card Structure</h2>
+
+            <p>
+                Let's start by looking at a few cards to get familiar with their basic structure.<br>
+                See: Braids, Conjurer Adept<br>
+                <img src="https://cards.scryfall.io/normal/front/5/9/593dfb2f-ede0-413a-b037-46ae5c3769e4.jpg?1598303769" alt="Braids, Conjurer Adept">
+                We can see two horizontal ribbons of brief text, on along the top edge of the card, and one about halfway down. There's some art in between them, and a bunch of text in the bottom half.<br>
+
+                The left side of the top ribbon has the card's name - this is unique for this card, meaning every card with the same name is identical in every mechanical sense, though sometimes the art or styling might be a little different. The mana cost of the card is shown in the card's top right - this represents how much of each kind of mana (the main resource in the game) you'll need to cast this card. We won't cover mana just yet.<br>
+
+                Between the two ribbons is the art for the card. This isn't relevant to the mechanics of the game, but does a lot to make the game feel more immersive and thematic, and it's often just pretty. <br>
+
+                The middle ribbon shows the type of the card, along with any card subtypes and supertypes. The main types are land, creature, artifact, enchantment, planeswalker, sorcery, instant. Anything you see before the card type is a supertype (e.g. Legendary), and anything after the card type is a subtype (e.g. Human). We won't get too much into these since they're less fundamental to the workings of the game, and are instead usually used in the mechanics of individual cards.<br>
+
+                And lastly, in the bottom half, we see a bunch of text. This includes the mechanical abilities and effects of the card if it has any, and below that is the flavor text. The flavor text isn't mechanically important to the game, but like the art, grounds the card into the narrative and world of Magic. You'll see some great one sentence stories, hilarious puns, and glib remarks here. <br>
+
+                Let's discuss more about the card types. You can identify the type of a card by looking at the line of text that goes horizontally through the middle of the card. <br>
+            </p>
+            <ul>
+                <li>Land - with rare exception, these produce the mana that you'll use to play other cards and generate effects. They usually look like locations and terrain in the art. <br>
+            See: Forest<br>
+            <img src="https://cards.scryfall.io/small/front/9/f/9f9e911e-7e12-4d99-806c-5cfba19ea8f3.jpg?1675957297"></li>
+                <li>Creature - these are monsters, characters, animals, etc. Animated, living things that can move. These are often used to attack and deal damage to your opponent to win the game. They have a pair of numbers in the bottom right to represent their strength in combat - the first is the power: the amount of damage it can dish out, and the second is its toughness: the amount of damage needed to kill it. <br>
+            See: Abyssal Gatekeeper<br>
+            <img src="https://cards.scryfall.io/small/front/6/d/6d2a66f0-1afe-41e6-a597-ec2e95685191.jpg?1561771503"></li>
+                <li>Artifact - these are items and objects in the world of Magic. Statues, amulets, wands, swords, etc. There are plenty of different kinds, with all sorts of different effects. It's hard to put them in a clear box on their mechanics. <br>
+            See: Helvault<br>
+            <img src="https://cards.scryfall.io/small/front/1/6/16d2448c-1b2e-466a-a0ab-e20ba1de6bc9.jpg?1562900508"></li>
+                <li>Enchantment - these mechanically behave a little like artifacts, but thematically represent more abstract things, like morale or ongoing magical effects on parts of the world.<br>
+            See: Brave the Sands<br>
+            <img src="https://cards.scryfall.io/small/front/0/9/09ab8b60-cdb1-43a8-b180-b562bb89b5a1.jpg?1562272394"></li>
+                <li>Planeswalker - these represent particularly powerful characters in Magic, who are almost like other players. They usually have a small collection of abilities, and they can be directly attacked by creatures in combat. These are relatively rare, but not too complicated mechanically.<br>
+            See: Garruk Wildspeaker<br>
+            <img src="https://cards.scryfall.io/small/front/6/b/6b56c367-7ac8-4541-9f2e-1fdc9c5aecdc.jpg?1562920293"></li>
+                <li>Sorcery - these are one-time effects that you can play only during your turn, often representing a sudden event or a single magical spell.<br>
+            See: Acquire<br>
+            <img src="https://cards.scryfall.io/small/front/9/9/993957c7-5d61-4c98-826d-b657aed667e1.jpg?1562878704"></li>
+                <li>Instant - these are one-time effects that you can play almost any time, also usually representing a sudden event or magical spell. These can get mechanically complicated, mainly because of when you can cast them. We'll treat them basically like sorceries until you've got a better overall understanding of the game's basics.<br>
+            See: Abrade<br>
+            <img src="https://cards.scryfall.io/small/front/a/0/a0e47d11-cb21-402b-a39e-588a94cc57b4.jpg?1643590610"></li>
+            </ul>
+
+            <p>
+                We could get into the different workings of each card type here, but they're tightly related to the elements of a turn, so we'll go on to that and discuss them there.<br>
+
+                Instead, lets talk a little about mana and mana costs. Mana comes in five colors - White {W}, Blue {U}, Black {B}, Red {R}, Green {G}. These are generated respectively by Plains, Island, Swamp, Mountain, and Forest lands by tapping them. You will also often see numbers in gray circles like {3} shown in the costs of things. This means three generic mana, for which the color doesn't matter. You may also see {C}, which means a colorless mana - it can't be used for any colored costs, but can be put towards generic mana costs.<br>
+
+                For example, if you look at Braids' mana cost ({2}{U}{U}), it shows that to cast her, you need to spend two mana of any color, plus two blue mana, such as from Islands. Four in total. Abrade costs two mana - one of any color, and one red. <br>
+
+                Once a creature or other permanent is cast and is on the board, you don't need to pay its cost again to keep it out or to attack with it. Mana costs can also show up in the abilities of cards.<br>
+            </p>
+
+            <h2>Board Structure</h2>
+
+            <p>
+                Each player has a library (deck), a hand, and a graveyard (discard pile). <br>
+                Most of play happens on the battlefield - this is where you'll play your lands, creatures, planeswalkers, artifacts, and enchantments (all are collectively called permanents). Instants and sorceries don't stick around, and so don't stay on the battlefield, they are cast and go straight to the graveyard. <br>
+                Most of your cards start in your library, until they are drawn into your hand, and then cast onto the battlefield (note: there is another zone involved here, called the stack, but this is more complicated, and will be discussed later). Then, if/when they are destroyed, they go to the graveyard. Any cards discarded from your hand also go to the graveyard. <br>
+                Lastly, there is exile. Especially at low level play, this isn't all that relevant, but it's kind of a catch-all place to put cards that aren't anywhere else. Cards don't really go there unless there's some kind of effect that makes it happen, and they don't usually leave exile unless the effect that put them in exile has a way for them to leave.<br>
+                Each player has a maximum hand size of seven cards - which doesn't come up all that often, and is only checked at the end of that player's turn.
+            </p>
+
+            <h2>
+                Start of the Game and Turn Structure
+            </h2>
+
+            <p>
+                When you start the game, each player draws seven cards, and they randomly choose who will go first. In a one-on-one match, the player to go first skips their first draw for turn. <br>
+
+                At a basic level, there are five parts to each turn before it moves to the next player's turn:
+            </p>
+            <ol>
+                <li>The beginning phase (untap, upkeep, draw)</li>
+                <li>The first main phase (can do most of your stuff here)</li>
+                <li>The combat phase (try to do damage to your opponent: begin combat, declare attackers, declare blockers, combat damage, end of combat)</li>
+                <li>The second main phase (can do most of your stuff here)</li>
+                <li>The ending phase (end step, cleanup)</li>
+            </ol>
+
+            <p>
+                It's a little weird that there are two different sections called the main phase where you can do most of your stuff, but that's how the game is structured, and there's plenty of cards and strategy that make both relevant. Let's cover parts of a turn in order.
+            </p>
+
+            <p>
+                Starting section - untap, upkeep, draw:<br>
+                During the start of your turn you first untap your permanents, meaning that you re-ready them for your turn. Creatures usually become tapped when they attack, and lands become tapped when they're used for mana. Other permanents can become tapped for any number of reasons, but those are the most universal.<br>
+                Next is the upkeep step - nothing inherently happens here, but there are plenty of effects that want you to do something at the beginning of your turn, marked by words like “at the beginning of your upkeep” - those happen here.<br>
+                Last is the draw step - this is pretty self-explanatory, you draw a card.
+            </p>
+
+            <p>During each of the main phases is when you can play your lands (only one per turn, not one per main phase), you can cast sorceries, artifacts, enchantments, creatures, and planeswalkers. Or instants, but the main value of instants is that you can cast them at other times, like your (or others') upkeep, any time during combat, or even during someone's end step. </p>
+
+            <p>While there are technically five steps to the combat phase, only the middle three are really commonly relevant. </p>
+            <ol>
+                <li>Beginning combat just means that everyone agrees to move to combat, and that we're no longer in the main phase. </li>
+                <li>Declare attackers - these next three are the important ones. The active player, the person whose turn it is, can choose to attack another player with any number of their creatures. <br>
+                    Details - creatures that you played this turn cannot attack, they have to wait a turn to lose their summoning sickness. You won't get another opportunity to attack until your next turn, and can't change your mind after this point about who you attack or which creatures you attack with. All creatures declared as attackers become tapped. If a creature is tapped before combat, it cannot attack. You attack the player (or planeswalker), not the player's creatures. They'll choose how to block in a moment.</li>
+                <li>Declare blockers - the player(s) who are being attacked, choose which creatures they want to use to block, and how they will block. Once declared, they cannot be changed. <br>
+                    Details - a tapped creature (e.g. one that attacked) cannot be declared as a blocker. A given creature can block up to one attacking creature, but multiple creatures can block the same attacking creature. Many abilities of creatures restrict how they can be blocked, like Flying. Also, creatures do not need to tap to block.</li>
+                <li>Combat damage - damage is applied to players, attacking creatures, and blocking creatures all at the same time. Any creature (attacking or blocking) that has taken damage greater than or equal to its toughness immediately dies and goes to the graveyard. Note, damage on a creature only lasts until the end of the turn, so if it doesn't die this turn, it sort of resets. But if it takes more damage from another effect in the same turn, it'll still die.</li>
+                <li>End of Combat - everyone agrees to move out of combat into the next main phase, not super important.</li>
+            </ol>
+
+            <p>The second main phase is identical to the first.</p>
+
+            <p>The end step is where most temporary effects end, and where you check your hand size. If you have more than seven cards in hand, discard down to seven - you choose which cards to discard.</p>
+
+            <p>
+                It's probably a good idea to play through a basic game or two at this point to help solidify a basic understanding of card types, how things move among different parts of the board, and how turns work. The next sections are largely about reading and understanding more of the text on individual cards.<br>
+
+                I want to note that a lot of the complexity that will be discussed later comes from the small waiting periods between two things happening, and from when different decisions need to be made. Such as a small window between casting and resolving a spell, timing on the upkeep, moving between phases, etc. It'll be discussed a little in The Stack, but won't be covered in detail in this primer. Just something to keep an eye out for.
+            </p>
+
+            <h2>Jargon</h2>
+            
+            <h3>Mechanical words:</h3>
+            
+            <ul>
+                <li>Permanent - Land, Creature, Artifact, Enchantment, Planeswalker. Any card that sticks around, not an instant or sorcery.</li>
+                <li>Tap - represented by turning the card 90 degrees sideways. Attacking creatures tap, lands are tapped to produce mana, and many abilities on permanents require them to tap.</li>
+                <li>Sacrifice - usually a cost for something but not always. Choosing a permanent with a type specified by the effect to go to the graveyard.</li>
+                <li>Dies - when a creature goes from the battlefield to the graveyard.</li>
+                <li>Cast - when a card has a mana cost paid and is moved onto the stack, usually from the players hand.</li>
+                <li>Spell - this is a little tricky: whenever a card is on the stack, it is a spell. E.g. a creature that has its cost paid but hasn't entered the battlefield yet is a creature spell. Same for an instant that has been paid for but hasn't had its effect happen yet. Note: lands are not cast, do not use the stack, and so are never spells.</li>
+                <li>Destroy - an effect that causes a permanent to go from the battlefield to the graveyard. </li>
+                <li>When/Whenever/At - if it's the first word, this signifies a triggered ability.</li>
+                <li>“:” - signifier for recognizing an activated ability. The cost for the ability comes before the colon, and the effect comes after</li>
+                <li>Exile - the exile zone, or the act of putting something into that zone. E.g. Exile target creature.</li>
+                <li>Mill - put a specified number of cards directly from your library into your graveyard.</li>
+                <li>Token -</li>
+                <li>Target -</li>
+            </ul>
+
+            <h3>Player terminology</h3>
+            
+            <ul>
+                <li>Ramp - getting access to more mana - either by playing cards that get more lands, or artifacts/creatures/enchantments that generate mana. Also a strategy focused on getting lots of mana quickly.</li>
+                <li>Swing - to attack</li>
+                <li>Sac - shorthand for sacrifice</li>
+            </ul>
+
+            <h2>Colors</h2>
+
+            <p>
+                This section is more about flavor and feel than gameplay mechanics, but I think is still an important part to immersing yourself in this wonderfully complex game.<br>
+
+                Magic has five colors - White (sun), Blue (water drop), Black (skull), Red (fire), and Green (tree). A card can be any number of colors, or none at all, as in the case for many artifacts. <br>
+
+                Personally, one of my favorite things about Magic is the color pie. Each color represents a sort of philosophy or attitude towards the world, and despite appearances, no color is inherently good or inherently bad. There are plenty of great articles on this.<br> 
+                If we take a look at the back side of a magic card, we'll see the five colors arranged in a circle. Each of the colors (philosophies) has two “ally” colors, shown next to the color on the circle, and two “enemy” colors, shown opposite. This means that no two colors are diametrically opposed.<br>
+            </p>
+
+            <ul>
+                <li>White - seeks peace through order. Could be a peaceful society, or could be totalitarianism with enforced uniformity.</li>
+                <li>Blue - seeks perfection through knowledge. Can be great scholars, or can be controlling manipulators.</li>
+                <li>Black - seeks power through selfishness. Can be a paragon of self empowerment, or a backstabbing traitor. Not inherently evil, though a lot of the writers didn't get that message.</li>
+                <li>Red - seeks freedom through action. Can be passionate and expressive, or can be angry and violent.</li>
+                <li>Green - seeks harmony through community growth. Can be deeply at peace with itself, or can be staunchly against progress and directed change.</li>
+            </ul>
+            <p>
+                Okay, all this philosophizing is great, but what does it mean? There aren't any hard mechanics to cover here, but the basic idea is that each color has some things that they're good at, and some things that they're bad at. 
+            </p>
+            <ul>
+                <li>Green is great at getting more lands and mana, and at having powerful creatures relative to their cost, but struggles with removing enemy cards. </li>
+                <li>Blue is great at drawing cards, but tends to have weak creatures for the cost. </li>
+                <li>Black is great at removing enemy creatures, and has some access to effects from the other colors, but usually has to hurt itself while doing so. </li>
+                <li>Red is great at hitting quickly and explosively, but has a hard time with defense. </li>
+                <li>White is great at defense, but doesn't draw a lot of cards.</li>
+
+            </ul>
+            <p>
+                As mentioned before, cards can be of multiple colors. And of course, you can include cards of multiple colors in your deck too, or even all colors. This can help a lot with covering a given color's weaknesses, and can give the deck more complex strategies. It's not all upside, though - you have to have the right colors at the right time. That's a deckbuilding discussion.
+            </p>
+
+<!--
+            <h2>Abilities and The Stack</h2>
+            <p>
+                This is the most complex part of this primer to understand, so don't worry if you need to put it off a bit or revisit it a few times.
+
+                We'll start with the different kinds of abilities, since they're a little more tangible, and we can use them to also talk about the stack.
+                There are three basic kinds of abilities, though there are nuances and variations for each:
+            </p>
+                <ul>
+                    <li>Static abilities are ongoing effects that don't have a clear place in time. I wish there was a clear identifier for these sometimes, but there isn't, outside of not being the other two. E.g. Flying</li>
+                    <li>Triggered abilities “trigger” when something happens in the game. These start with the words “At”, “When”, or “Whenever”. E.g. When X enters the battlefield…</li>
+                    <li>Activated abilities have a cost followed by an effect, separated by a colon. These are a little like casting an instant or sorcery, though they come from a permanent, and are often repeatable.</li>
+                </ul>
+            <p>
+
+                The stack is a sort of holding zone where your spells, triggered abilities, and activated abilities go before they actually happen. You can think of it as a gap between saying “I want to do this, and am committing the resources” and “this happens”. This gives other players the opportunity to respond before your effect happens. You can also respond to your own effects, but the strategy/tactics for doing this is more complicated and highly dependent on the cards in question, and so you don't see this as much.
+
+                There are a few things that don't use the stack - playing lands from your hand, static abilities, any ability that directly produces mana, and paying the cost for an effect.
+            </p>
+
+            <p>
+                You can think of the stack as a neat, sequentially ordered pile of different effects that players have activated, cast or triggered. It follows the last in, first out rule that some programmers might be familiar with. The stack is empty, until someone decides to cast an instant spell or activate an ability (or a triggered ability can go on an empty stack if its because of a phase change e.g. Braids). Let's label these in numerical order to talk about them more easily - that was Effect 1. Before that effect resolves, an ability might trigger, or someone else might put another effect on the stack, Effect 2. There's no theoretical limit to how many effects could be on the stack.
+                So it currently looks like this<br>
+
+            </p>
+            
+            <table>
+                <tr>
+                    <td>Stack:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>(empty)</td>
+                    <td>&rarr;</td>
+                    <td>Effect 2</td>
+                    <td>&rarr;</td>
+                    <td>Effect 1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Effect 1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <p>
+                At this point, if no one has any effects to respond with, the effects on the stack will resolve one at a time from top to bottom. So Effect 2 will happen first, followed by Effect 1.
+                There's another element of complexity, though. The players can let Effect 2 resolve, and then have another effect, Effect 3. So the stack can grow and shrink a lot with different effects before the first effect resolves.<br>
+            </p>
+
+            	
+            <table>
+                <tr>
+                    <td>Stack:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Effect 2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Effect 3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>(empty)</td>
+                    <td>&rarr;</td>
+                    <td>Effect 1</td>
+                    <td>&rarr;</td>
+                    <td>Effect 1</td>
+                    <td>&rarr;</td>
+                    <td>Effect 1</td>
+                    <td>&rarr;</td>
+                    <td>Effect 1</td>
+                </tr>
+            </table>
+
+            <p>
+                This is too much abstract talk, and it needs some examples. <br>
+
+                Let's look at some examples, roughly in order of increasing complexity.
+            </p>
+
+            <h3>
+                Cast a creature or other spell
+            </h3>
+            <p>
+                Turns out, in all the sample games you've been playing so far, you've already been using the stack, such as every time you've cast a spell, or activated or triggered an ability. First, we'll pay the mana cost of _____, which puts the creature on the stack. It hasn't entered the battlefield yet. None of our opponents have a response, so the creature resolves, and now enters the battlefield and the stack is empty.<br>
+            </p>
+
+            <table>
+                <tr>
+                    <td>Stack:</td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>___(creature spell)</td>
+                    <td>&rarr;</td>
+                    <td>(empty)</td>
+                </tr>
+                <tr>
+                    <td><br><br>Board (excluding lands):</td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>(empty)</td>
+                    <td>&rarr;</td>
+                    <td>___(creature)</td>
+                </tr>
+            </table>
+            <h3>
+                Cast a creature w/ ETB
+            </h3>
+            <p>
+                A common form of triggered ability is one that triggers when a creature enters the battlefield (shortened to ETB). So let's look at the stack of how that works. We'll use the card ______ for this example.
+                First, we'll pay the mana cost of _____, which puts the creature on the stack. It hasn't entered the battlefield yet, so that ability doesn't go on the stack yet. None of our opponents have a response, so the creature resolves, and now enters the battlefield and the stack is empty. And now the ETB goes on the stack, and again, our opponents can respond to it. Let's assume they don't, and we finally get to ____.<br>
+            </p>
+
+            <table>
+                <tr>
+                    <td>Stack:</td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>___(creature spell)</td>
+                    <td>&rarr;</td>
+                    <td>___(ETB)</td>
+                    <td>&rarr;</td>
+                    <td>(empty)</td>
+                </tr>
+                <tr>
+                    <td><br><br>Board (excluding lands):</td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>(empty)</td>
+                    <td>&rarr;</td>
+                    <td>___(creature)</td>
+                    <td>&rarr;</td>
+                    <td>___(creature)</td>
+                </tr>
+            </table>
+            <p>
+
+                Now let's look at some ways that people might interact with that.
+            </p>
+
+            <h3>
+                Cast a creature w/ ETB+ removal in response
+            </h3>
+            <p>
+                We cast our ___, and it's on the stack. None of our opponents have a response, so the creature resolves as before, and enters the battlefield - its ability triggers and goes onto the stack. Now, one of our opponents decides to destroy our creature with Murder, an instant. The Murder resolves before our triggered ability, and destroys our creature. But what happens to the ability that's on the stack? Does it get removed along with the creature, or does it stay on the stack? The answer's not intuitive - the ability stays on the stack, and resolves if there are no other responses. You may want to ask why they couldn't have cast their instant in response to the creature spell being on the stack - good question. At that point, ___ isn't yet a creature, and so isn't a valid target for our opponent's Murder. Our opponent has to wait until the creature leaves the stack and enters the battlefield. 
+                Another detail - when ___ resolves, the ETB ability goes on the stack before our opponent gets the opportunity to respond, and even before <it>we</it> get the opportunity to respond. This applies to all triggered abilities. We'll talk about the ordering of multiple triggered abilities a few examples from now.<br>
+            </p>
+            <table>
+                <tr>
+                    <td>Stack:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>___(creature spell)</td>
+                    <td>&rarr;</td>
+                    <td>___(ETB)</td>
+                    <td>&rarr;</td>
+                    <td>Murder</td>
+                    <td>&rarr;</td>
+                    <td>___(ETB)</td>
+                    <td>&rarr;</td>
+                    <td>(empty)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>___(ETB)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><br><br>Board (excluding lands):</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>(empty)</td>
+                    <td>&rarr;</td>
+                    <td>___(creature)</td>
+                    <td>&rarr;</td>
+                    <td>___(creature)</td>
+                    <td>&rarr;</td>
+                    <td>(empty)</td>
+                    <td>&rarr;</td>
+                    <td>(empty)</td>
+                </tr>
+            </table>
+            <h3>
+                Cast a creature w/ ETB+ counterspell
+            </h3>
+            <p>
+                We've cast our ___ and put it on the stack, but one of our opponents doesn't want us to get the ETB effect. In order to stop it, they cast Counterspell in response, targeting our creature spell. <br>
+            </p>
+                <table>
+                    <tr>
+                        <td>Stack:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>___(creature spell)</td>
+                        <td>&rarr;</td>
+                        <td>Counterspell</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>___(creature spell)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br><br>Board (excluding lands):</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                    </tr>
+                </table>
+            <p>
+                The counterspell resolves first, and our creature is removed from the stack and put straight into the graveyard. Its ETB never triggered, since it never entered the battlefield - it was removed directly from the stack.
+            </p>
+
+            <h3>
+                Cast a spell + cast trigger
+            </h3>
+            <p>
+                Some abilities trigger when a spell is cast, when it's put onto the stack. You might think of this as an “enters the stack” trigger for your spells. This doesn't apply to activated or triggered abilities. 
+                Back to our example. We're casting our ___ as before, but this time we have a Beast Whisperer already on the field. It reads “Whenever you cast a creature spell, draw a card.” So we cast our ___, and as soon as we put ___ on the stack, Beast Whisperer sees that and triggers.<br>
+            </p>
+            
+                <table>
+                    <tr>
+                        <td>Stack:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>___(creature spell)</td>
+                        <td>&rarr;</td>
+                        <td>Draw a card</td>
+                        <td>&rarr;</td>
+                        <td>___(creature spell)</td>
+                        <td>&rarr;</td>
+                        <td>___(ETB)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>___(creature spell)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br><br>Board (excluding lands):</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                    </tr>
+                </table>
+            <p>
+                So, assuming no other responses from our opponents, we draw a card first, and then our creature resolves, followed by the ETB.
+
+                Remember a minute ago when I said we'd talk about what happens when there are multiple triggers? Well, that time is now. There are two main cases, and unfortunately, I think I need to talk about the more complex one first, because it's the one that's more important to remember.<br>
+            </p>
+
+            <h3>
+                Cast a spell + multiple triggers (me and opponent)
+            </h3>
+            <p>
+                Let's continue focusing on our ETB creature - we cast ___, no one has any responses or cast triggers and it enters the battlefield, but this time, our opponent has an effect that also triggers when a creature enters the battlefield, like ___. So we have two things that both trigger when our creature enters the battlefield - the ability on ___ itself, and our opponents effect. Do they happen at the same time? If not, what order do they go in?<br>
+
+                To answer the first question, they do not happen at the same time - that would be a nightmare in even moderately complex boardstates to figure out what happens. No, because it's our turn, our triggers go on the stack first, followed by our opponents, in turn order. Assuming no one has anything to add to the stack, they will start to resolve. So whose trigger resolves first? If we had multiple opponents with triggers?<br>
+            </p>
+                	
+                <table>
+                    <tr>
+                        <td>Stack:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>___(creature spell)</td>
+                        <td>&rarr;</td>
+                        <td>___(opponent trigger)</td>
+                        <td>&rarr;</td>
+                        <td>___(ETB)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>___(ETB)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br><br>Board (excluding lands):</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>___(empty)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                    </tr>
+                </table>
+            <p>
+                Right, the opponent's triggers resolve first, in reverse turn order. Last in, first out.<br>
+            </p>
+            <h3>
+                Cast a spell + multiple triggers (all mine)
+            </h3>
+            <p>
+                Alright, this case should be a little simpler. But if you need to forget one of these last two, I suggest you forget this one, since it'll get you in less trouble.
+                Cast our ___ as before, but this time there are two (or more) triggered effects, and we control all of them. What order do they go in? The order that we played them? Do we get to choose? Does Santa get to choose?
+                Fortunately, in this case, we get to choose. Usually, the rules are set up so that you don't have to remember too much about the order in which things were cast to figure out what happens, and instead there's usually a rule that lets you figure out what happens based on the board as it exists right now, irrespective of how you got here. But you can see how mixing up this with the previous trigger ordering could cause real problems.<br>
+            </p>
+                
+                <table>
+                    <tr>
+                        <td>Stack:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>___(creature spell)</td>
+                        <td>&rarr;</td>
+                        <td>___(our trigger)</td>
+                        <td>&rarr;</td>
+                        <td>___(ETB)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>___(ETB)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br><br>Board (excluding lands):</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                    </tr>
+                </table>
+                <p>
+                    OR<br>
+                </p>
+                <table>
+                    <tr>
+                        <td>Stack:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>___(creature spell)</td>
+                        <td>&rarr;</td>
+                        <td>___(ETB)</td>
+                        <td>&rarr;</td>
+                        <td>___(our trigger)</td>
+                        <td>&rarr;</td>
+                        <td>(empty)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>___(our trigger)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br><br>Board (excluding lands):</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(empty)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                        <td>&rarr;</td>
+                        <td>___(creature)</td>
+                    </tr>
+                </table>
+            <p>
+                Lets introduce priority. Basically, priority is a system of rules to determine the order of when multiple people have things that they can choose to put on the stack. If my opponent and I both want to do something in response to a  trigger, whose goes on the stack first?<br>
+
+                I suggest you play another couple of simple games, detailing, even just to yourself, as much as possible exactly what's happening to the stack. This might be a little exhausting/tedious, but fortunately most games won't require you to keep close track of every stack interaction. It's just to build a familiarity. I suggest having a clear space on the board just to represent the stack, so you can distinguish between things and effects that are on the stack versus on the battlefield. Notably, stack things can get much more complicated, but to exhaust all the possibilities would take far to much paper on my end, and far too much time on yours. You can have multiples of the same trigger, you can have many more than the two triggers we've been working with, you can add more stuff onto the stack after it starts resolving but before it finishes, etcetera. But these guidelines should provide a good baseline.<br>
+            </p>
+        -->
+        </main>
+        <footer></footer>
+        <link href="https://code.jquery.com/jquery-2.0.3.min.js">
+        <link href="./javascripts/app.js">
+    </body>
+</html>
